@@ -1,0 +1,19 @@
+name: terraform workflow
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  terraform_init:
+    runs-on: ubuntu-latest
+    steps:
+      - name: initail terrform
+        run: echo "terrform init"
+  terraform_plan:
+    runs-on: ubuntu-latest
+    steps:
+      - name:  terraform plan
+        run: echo "terrform plan"
+
+  
